@@ -1,0 +1,19 @@
+<ion-view title="{{category | lowercase}} for NGO" id="page6" style="background-color:#FFFF;">
+    <ion-content padding="true" class="has-header">
+        <ion-list class="card">
+          <div ng-repeat="need in ngoNeeds">
+            <ion-item class="item-thumbnail-left">
+              <img src="{{need.item_imgSrc}}">
+              <h2>{{need.item_name}} ({{need.item_need_count}})</h2>
+              <p>{{need.item_desc}}</p>
+              <div class = "row center">
+                  <div class="col text-right">
+                     <label class="subdued assertive">{{need.org_name | uppercase}}</label> 
+                     <button class="button button-small button-dark" ng-click="donateForNGO(need)">Donate!</button>
+                  </div>
+              </div>
+            </ion-item>
+           </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,33 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/projects/giveBack/www/js/app.js",
+        "/projects/giveBack/platforms/android/build/intermediates/assets/debug/www/plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "/projects/giveBack/platforms/android/platform_www/cordova_plugins.js",
+        "/projects/giveBack/platforms/android/platform_www/plugins/cordova-plugin-device/www/device.js",
+        "/projects/giveBack/platforms/android/platform_www/plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "/projects/giveBack/platforms/android/platform_www/plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "/projects/giveBack/platforms/android/platform_www/plugins/cordova-plugin-whitelist/whitelist.js",
+        "/projects/giveBack/platforms/android/platform_www/plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "/projects/giveBack/platforms/ios/build/emulator/giveBack.app/www/cordova-js-src/exec.js",
+        "/projects/giveBack/platforms/android/cordova/lib/pluginHandlers.js",
+        "/projects/giveBack/www/js/controllers/ngoCtrlr.js",
+        "/projects/giveBack/app/js/controllers/ngoNeedsCtrlr.js",
+        "/projects/giveBack/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular-ui/angular-ui-router.min.js",
+        "/projects/giveBack/app/js/controllers/ngoNeedsCatgCtrlr.js",
+        "/projects/giveBack/platforms/android/cordova/Api.js",
+        "/projects/giveBack/platforms/android/cordova/lib/Adb.js",
+        "/projects/giveBack/app/js/services.js",
+        "/projects/giveBack/platforms/android/cordova/lib/build.js",
+        "/projects/giveBack/platforms/android/cordova/lib/builders/AntBuilder.js",
+        "/projects/giveBack/platforms/android/cordova/lib/AndroidManifest.js",
+        "/projects/giveBack/platforms/android/cordova/lib/AndroidProject.js",
+        "/projects/giveBack/platforms/android/cordova/lib/builders/builders.js",
+        "/projects/giveBack/platforms/android/cordova/lib/builders/GenericBuilder.js",
+        "/projects/giveBack/platforms/android/cordova/lib/builders/GradleBuilder.js",
+        "/projects/giveBack/app/js/controllers/ngoAskCtrlr.js",
+        "/projects/giveBack/app/js/routes.js",
+        "/projects/giveBack/platforms/android/cordova/lib/log.js",
+        "/projects/giveBack/platforms/android/cordova/lib/prepare.js",
+        "/projects/giveBack/platforms/android/cordova/lib/retry.js"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.2.4"
+  },
+  "resolutions": {
+    "angular": "1.4.3"
+  },
+  "dependencies": {
+    "ion-gallery": "~0.1.14"
+  },
+  "preen": {
+    "ngCordova": [
+      "dist/ng-cordova.min.js"
+    ]
+  }
+}

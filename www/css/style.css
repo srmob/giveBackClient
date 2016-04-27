@@ -1,0 +1,16 @@
+.gallery-item {
+  float: left;
+  padding: 5px;
+}
+#carousel {
+  height: 200px;
+  width: 200px;
+}
+.item {
+    border-top: 0px;
+    
+    border-bottom: 1px;
+    border-style: none;
+    border-color: #ccc;
+    background: transparent;
+}

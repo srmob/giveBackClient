@@ -1,0 +1,57 @@
+<ion-view title="Donate" id="page2" style="background-color:#FFFF;">
+    <ion-content padding="true" class="has-header">
+        <h5 id="donate-heading1" ng-if="stateName !='menu.donate1'" style="color:#0C0B0B;font-weight:600;font-style:italic;">Please share donation details</h5>
+        <h5 id="donate-heading1" ng-if="stateName =='menu.donate1'" style="color:#0C0B0B;font-weight:600;font-style:bold;text-align: Center;"> Donation for {{org_name}} </h5>
+        <div class="spacer" style="height: 5px;"></div>
+        <form class="list">
+            <label class="item item-select" ng-if="stateName!='menu.donate1'">
+                <span class="input-label">Category</span>
+                <!-- <select>
+                    <option>Clothes</option>
+                    <option>Shoes / sandals</option>
+                    <option>toys</option>
+                    <option>books</option>
+                    <option>kitchen items</option>
+                    <option>bedsheets</option>
+                    <option>medicines</option>
+                </select> -->
+                <select ng-model="userDetails.default_select" 
+                    ng-options="catg.catg_name for catg in selectOptions | orderBy:'catg_name'"> 
+                </select>
+            </label>
+        </form>
+        <div class="spacer" style="height: 10px;"></div>
+        <ion-list>
+            <ion-item class="item-divider has sub-header bar sub-header bar-positive">Your Details</ion-item>
+        </ion-list>
+        <div class="spacer" style="height: 10px;"></div>
+        <form class="list" >
+            <div class="label"  ng-if="stateName =='menu.donate1'"> 
+                <span class="input-label positive item item-wrap">
+                    <b>Donation Category :</b></span> 
+                    {{userDetails.default_select.catg_name | uppercase}}
+            </div>
+            <label class="item item-input">
+                <span class="input-label positive"><b>Your Name</b></span>
+                <input type="text" placeholder="Name" ng-model='userDetails.name' name='name'>
+            </label>
+            <label class="item item-input">
+                <span class="input-label positive"><b>Contact#</b></span>
+                <input type="tel" placeholder="Phone#" ng-model='userDetails.phone' name='phone'>
+            </label>
+            <label class="item item-input ">
+                <span class="input-label positive"><b>email</b></span>
+                <input type="email" placeholder="Email ID" ng-model='userDetails.email' name='email'>
+            </label>
+            <label class="item item-input">
+                <span class="input-label positive"><b>Item count #</b></span>
+                <input type="number" placeholder="item count" ng-model='userDetails.item_count' name='count'>
+            </label>
+            <label class="item item-input">
+                <span class="input-label positive"><b>Details</b></span><textarea placeholder="provide more details" ng-model='userDetails.details' name='details'> </textarea>
+            </label>
+        </form>
+        <button id="donate-button1" style="font-weight:600;color:#00000;font-size:12px;border-radius:40px 40px 40px 40px;" class="button button-energized button-small icon-left ion-image">photo?</button>
+        <button id="donate-button2" style="font-weight:600;font-size:12px;border-radius:49px 49px 49px 49px;" class="button button-balanced button-small button-block icon ion-thumbsup" ng-click="addDonation(userDetails)">Donate</button>
+    </ion-content>
+</ion-view>

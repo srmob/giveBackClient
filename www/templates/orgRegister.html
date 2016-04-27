@@ -1,0 +1,53 @@
+<ion-view title="Register Organization" id="page2" style="background-color:#FFFF;">
+    <ion-content padding="true" class="has-header">
+        
+        <div class="spacer" style="height: 5px;"></div>
+        <form class="list">
+            <label class="item item-select">
+                <span class="input-label">OrgCategory</span>
+                <select ng-model="org.category">
+                    <option>Kids</option>
+                    <option>Elderly</option>
+                    <option>Women</option>
+                    <option>Girls</option>
+                    <option>Disabled</option>
+                    <option>Orphans</option>
+                </select> 
+               
+            </label>
+            
+        </form>
+        <div class="spacer" style="height: 10px;"></div>
+        <ion-list>
+            <ion-item class="item-divider has sub-header bar sub-header bar-positive">Organization Details</ion-item>
+        </ion-list>
+        <div class="spacer" style="height: 10px;"></div>
+        <form class="list" >
+            
+            <label class="item item-input">
+                <span class="input-label positive"><b> Name</b></span>
+                <input type="text" placeholder="Name" ng-model='org.name' name='name'>
+            </label>
+            <label class="item item-input">
+                <span class="input-label positive"><b> Contact#</b></span>
+                <input type="tel" placeholder="Phone#" ng-model='org.phone' name='phone'>
+            </label>
+            <label class="item item-input ">
+                <span class="input-label positive"><b> email id</b></span>
+                <input type="email" placeholder="Email ID" ng-model='org.email' name='email'>
+            </label>
+            <label class="item item-input">
+                <span class="input-label positive"><b>Member count #</b></span>
+                <input type="number" placeholder="Member count" ng-model='org.memberCount' name='count'>
+            </label>
+            <label class="item item-input">
+                <span class="input-label positive"><b>Description</b></span><textarea placeholder="provide more details" ng-model='org.desc' name='details'> </textarea>
+            </label>
+            <label class="item item-input">
+                <span class="input-label positive"><b>Items category needed</b></span><textarea placeholder="Enter Items Needed separated by comma (,) " ng-model='org.itemDetailsNeed' name='details'> </textarea>
+            </label>
+        </form>
+        <button id="donate-button1" style="font-weight:600;color:#00000;font-size:12px;border-radius:40px 40px 40px 40px;" class="button button-energized button-small icon-left ion-image">Org image?</button>
+        <button id="donate-button2" style="font-weight:600;font-size:12px;border-radius:49px 49px 49px 49px;" class="button button-balanced button-large button-block icon ion-thumbsup" ng-click="addOrganization(org)">Add Org</button>
+    </ion-content>
+</ion-view>
